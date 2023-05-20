@@ -1,0 +1,89 @@
+---
+import { IAboutProps } from "@types";
+
+const { name, about, jobDescription } = Astro.props as IAboutProps;
+---
+
+<section class="mt-8">
+  <p class="dark:text-light">Hola, soy</p>
+  <h1 class="mb-2">{name}</h1>
+  <h2 class="dark:text-light mb-8">- {jobDescription} -</h2>
+  <p class="dark:text-light text-lg">
+    {about}
+  </p>
+  <div class="text-center">
+    <button
+      class="bg-blue dark:bg-transparent dark:border-blue dark:border-solid dark:border rounded-lg mt-8 mb-16 hover:brightness-110"
+      >
+      <a
+        class="text-light dark:text-blue font-medium inline-flex px-8 py-4"
+        href="https://drive.google.com/file/d/1cIEOMfmwDvmiOPSeF_5efsEzTFfUmGsY/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <span class="mr-2">Descargar CV</span>
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#000000"
+          width="20"
+          height="20"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+            <title></title>
+            <g id="Complete">
+              <g id="download">
+                <g>
+                  <path
+                    d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="stroke-white dark:stroke-blue"
+                  >
+                  </path>
+                  <g>
+                    <polyline
+                      data-name="Right"
+                      fill="none"
+                      id="Right-2"
+                      points="7.9 12.3 12 16.3 16.1 12.3"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="stroke-white dark:stroke-blue"
+                      >
+                    </polyline>
+                    <line
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      x1="12"
+                      x2="12"
+                      y1="2.7"
+                      y2="14.2"
+                      class="stroke-white dark:stroke-blue"
+                    >
+                    </line>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </button>
+  </div>
+</section>

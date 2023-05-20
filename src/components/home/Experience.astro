@@ -1,0 +1,46 @@
+---
+import { IExperiences } from "@types";
+
+const { title, details } = Astro.props as IExperiences;
+---
+
+<section
+  class="flex items-start justify-between flex-col sm:flex-row dark:text-light"
+>
+  <h2 class="w-[15rem] mt-16">{title}</h2>
+  <div class="w-full">
+    {
+      details.map((item) => (
+        <div class="my-16">
+          <div class="flex justify-between items-center flex-wrap">
+            <h3 class="text-xl font-semibold">{item.name}</h3>
+            <p class="text-sm dark:text-gray">
+              {item.startDate} - {item.endDate}
+            </p>
+          </div>
+          <div class="flex items-center gap-4 mt-1">
+            <p class="text-sm text-blue">{item.company}</p>
+            <ul class="flex-grow flex gap-2 items-center">
+              {item.companyTags.map((tags) => (
+                <li class="text-xs text-[#919191] dark:text-gray border-solid border border-[#919191] dark:border-gray rounded-lg px-1.5 py-0.5">{tags}</li>
+              ))}
+            </ul>
+            <p class="text-sm text-blue">{item.location}</p>
+          </div>
+          {item.description.map((item) => {
+            if (Array.isArray(item)) {
+              return (
+                <ul class="list-disc pl-2 ml-6 mt-3">
+                  {item.map((subItem) =>
+                    <li class="dark:text-gray">{subItem}</li>
+                  )}
+                </ul>
+              )
+            }
+            return <p class="dark:text-gray mt-3">{item}</p>
+          })}
+        </div>
+      ))
+    }
+  </div>
+</section>
