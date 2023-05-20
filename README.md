@@ -9,6 +9,7 @@
 
 ![Astro](https://img.shields.io/badge/Astro-FF5D01.svg?style=flat&logo=Astro&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)
+![Typescript](https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
 
