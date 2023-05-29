@@ -24,7 +24,7 @@ export const info = {
           "Desarrollo de una herramienta interna para la gestión de los usuarios, hacer seguimiento de uso mediante gráficas, mostrar el tracking de eventos, y dar soporte a los clientes. Diseño y desarrollo desde 0 por mí (React hooks y framework Material-UI).",
           "Control de versiones con Git. Uso de metodologías ágiles.",
           "Tecnologías usadas: React.js, Redux, JavaScript ES6, HTML5, CSS3, SASS(SCSS).",
-        ]
+        ],
       ],
     },
 
@@ -103,9 +103,7 @@ export const info = {
       location: "Palencia",
       startDate: "2012",
       endDate: "2014",
-      description: [
-        "FP de Grado Superior",
-      ],
+      description: ["FP de Grado Superior"],
     },
     {
       name: "Técnico Superior en Administración de Sistemas Informáticos en Red. (ASIR)",
@@ -113,9 +111,7 @@ export const info = {
       location: "Palencia",
       startDate: "2010",
       endDate: "2012",
-      description: [
-        "FP de Grado Superior",
-      ],
+      description: ["FP de Grado Superior"],
     },
   ],
 
@@ -162,6 +158,13 @@ export const info = {
 
   projects: [
     {
+      title: "Pokémon App",
+      isFeatured: true,
+      thumbnail: "/assets/images/projects/pokemon-next-portada.png",
+      githubUrl: "https://github.com/tatianallorente/pokemon-next",
+      liveUrl: "https://pokemon-next-tatianallorente.vercel.app/",
+    },
+    {
       title: "Movies App",
       isFeatured: true,
       thumbnail: "/assets/images/projects/moviesapp-portada.png",
@@ -198,7 +201,7 @@ export const info = {
     },
     {
       title: "Calendar MERN",
-      isFeatured: true,
+      isFeatured: false,
       thumbnail: "/assets/images/projects/calendar-mern-portada.png",
       githubUrl: "https://github.com/tatianallorente/Calendar-Frontend-MERN",
       liveUrl: "https://mern-calendar-tatiana.herokuapp.com/",
